@@ -5,6 +5,26 @@ GO 언어 공부용 프로젝트
 # 작업하면서 느낀점
 ## Golang답게 하려면 Channel, go rutine을 최대한 많이...
 
+# main.go sample
+
+	trans := txlog.NewConsoleTransfer()
+	txmgr := txlog.NewTxManager(trans)
+
+	director := cmd.NewMarketDirector(txmgr)
+
+	director.AddMarketConfig(config.CfgUpbit)
+
+	director.RegistStrategy(strategy.NewStrategyTrends())
+	director.RegistStrategy(strategy.NewStrategyAvg(coin.MIN1))
+	director.RegistStrategy(strategy.NewStrategyAvg(coin.MIN30))
+	director.RegistStrategy(strategy.NewStrategyAvg(coin.MIN60))
+	director.RegistStrategy(strategy.NewStrategyAvg(coin.MIN240))
+	director.RegistStrategy(strategy.NewStrategyJump())
+	director.RegistStrategy(strategy.NewStrategyCross60())
+	director.RegistStrategy(strategy.NewStrategyCrossHigh())
+
+	director.Run()
+
 # 구현된 내용 
 ## Golang 언어 공부용 프로젝트로 Go 언어의 특성을 살렸다고 볼수는 없을듯...
 
