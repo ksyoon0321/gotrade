@@ -29,7 +29,7 @@ GO 언어 공부용 프로젝트
  - Go lang channel기반 publish/subscribe (기본구조)
 8. strategy
  - IStrategy
- - 이평, 상승추세, 급등 샘플 (테스트 소스이므로 손절가, 매입가 거의 3% 정도로 넣음 (실제 매매에 도움 안될듯..)
+ - 이평, 상승추세, 급등 샘플 (테스트 소스이므로 손절가, 매입가 거의 3% 정도로 넣음. 실제 매매에 도움 안될듯..)
 9. tree
  - FileDatabase 객체에서 사용할 cache용도
  - Simple btree
@@ -41,3 +41,5 @@ GO 언어 공부용 프로젝트
  - TimeBase Expire Cache 간단버전
  - 환형 큐 간단버전
  - 기타 유틸함수들..
+12. marketDirector
+ - MarketDirector 프로그램의 메인이 되는 객체로 마켓들과 모니터, 전략등을 관리, 디렉팅
