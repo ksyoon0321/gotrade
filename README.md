@@ -43,3 +43,6 @@ GO 언어 공부용 프로젝트
  - 기타 유틸함수들..
 12. marketDirector
  - MarketDirector 프로그램의 메인이 되는 객체로 마켓들과 모니터, 전략등을 관리, 디렉팅
+
+###
+https://www.dumels.com/ 에서 UML Class diagram 확인 가능
